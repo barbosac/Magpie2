@@ -20,7 +20,7 @@ public class Magpie2
 	{
 		return "Hello, let's talk.";
 	}
-	
+
 	/**
 	 * Gives a response to a user statement
 	 * 
@@ -35,12 +35,24 @@ public class Magpie2
         {
 			response = "tell me more about your pets.";
 		}
+        if (statement.indexOf("Mr.") >= 0
+                || statement.indexOf("Mrs.") >= 0
+                || statement.indexOf("Miss") >= 0
+                || statement.indexOf("Ms.") >= 0)
+        {
+             response = "They sound like a good teacher.";
+        }
+        int.length = str.length();
+        {
+            response = "Please say something.";
+        }
 		else if (statement.indexOf("mother") >= 0
 				|| statement.indexOf("father") >= 0
 				|| statement.indexOf("sister") >= 0
 				|| statement.indexOf("brother") >= 0)
 		{
 			response = "Tell me more about your family.";
+
 		}
 		else
 		{
